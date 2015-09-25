@@ -1,0 +1,24 @@
+{
+  "name": "kyleturco-com",
+  "version": "0.0.0",
+  "homepage": "https://github.com/kyleturco/kyleturco.github.io",
+  "authors": [
+    "Kyle Turco <kyleturco@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.4",
+    "fontawesome": "~4.4.0",
+    "angular-route": "~1.4.4",
+    "angular-bootstrap": "~0.13.0"
+  }
+}

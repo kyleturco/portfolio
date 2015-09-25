@@ -1,0 +1,15 @@
+.modal(id="artModal" tabindex="-1" role="dialog" aria-labelledby="artModal" aria-hidden="true")
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close(data-dismiss="modal")
+          span &times;
+      .modal-body
+        .container
+          .modal-img.col-md-7
+            .art-large
+              img(src="{{art.current.url}}")
+          .modal-text.col-md-5
+            h3 {{art.current.title}}
+            p.medium {{art.current.medium}}
+            p.notes {{art.current.notes}}

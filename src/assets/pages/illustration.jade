@@ -1,0 +1,27 @@
+.illustration-background
+  .container
+    .illustration-section
+      h3.art-header Paintings/Drawings
+        .thumb-row
+          .art-thumb(ng-click='art.modalLoad(painting.id, "paintings")' ng-repeat='painting in art.paintings')
+            img(src="{{painting.url}}")
+
+          div(ng-include="'partials/art-modal.html'")
+
+    .digital-section
+      h3 Digital Imagery
+        .thumb-row
+          .art-thumb(ng-click='art.modalLoad(digital.id, "digitals")' ng-repeat='digital in art.digitals')
+            img.landscape(src="{{digital.url}}")
+
+          div(ng-include="'partials/art-modal.html'")
+
+    .cover-section
+      h3 Album Covers
+        .thumb-row
+          .art-thumb(ng-click='art.modalLoad(cover.id, "covers")' ng-repeat='cover in art.covers')
+            img(src="{{cover.url}}")
+
+          div(ng-include="'partials/art-modal.html'")
+
+
